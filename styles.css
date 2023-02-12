@@ -22,7 +22,7 @@ body {
   margin: 0 18px 0 18px;
 }
 .navbar-toggler {
-    border: none;
+  border: none;
 }
 .nav-item {
   margin: 0 18px;
@@ -73,12 +73,12 @@ body {
   color: crimson;
 }
 .intro-img {
-  width: 100px;
+  width: 90px;
   margin: 30px 20px;
   padding: 20px;
 }
 .intro-img:hover {
-    box-shadow: 0px 0px 10px #B4AAF9;
+  box-shadow: 0px 0px 10px #B4AAF9;
 }
 #title h2 {
   margin: 18px 0;
@@ -95,7 +95,6 @@ body {
 #title h6:hover {
   color: crimson;
 }
-
 
 /* Links & Hovering Colors*/
 a:link {
@@ -149,7 +148,7 @@ a:visited {
   color: #B4AAF9;  
 }
 #collections h2:hover {
-    color: #8d7eea;
+  color: #8d7eea;
 }
 .carousel-inner {
   padding: 5em 1em;
@@ -171,22 +170,20 @@ a:visited {
   box-shadow: 0px 0px 15px #B4AAF9;
 }
 #footer i {
-    padding: 20px;
+  padding: 20px;
 }
 .p-footer {
-    margin: 50px 0;
+  margin: 50px 0;
 }
 #footer i:hover {
-    color: #8d7eea;
+  color: #8d7eea;
 }
 .p-footer:hover {
-    color: #8d7eea;
+  color: #8d7eea;
 }
 
 
-
-
-/* Smaller Screens */
+/* Up To Specific Size */
 @media (max-width: 991px) {
  .navbar {
     margin-bottom: 4rem;
@@ -214,18 +211,40 @@ a:visited {
 }
 @media (max-width: 600px) {
   .navbar-toggler {
-      margin-left: 18px;
+    margin-left: 18px;
   }
   .navbar-brand {
-      margin-right: 18px;
+    margin-right: 18px;
+  }
+  .intro-img {
+    width: 80px;
   }
 }
+@media (max-width: 454px) {
+  .navbar-brand {
+    font-size: 2.1rem;
+  }
+  .intro-img {
+    width: 70px;
+  }
+  #intro p {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 388px) {
+  .navbar-brand {
+    font-size: 1.7rem;
+  }
+  #intro p {
+    font-size: 0.8rem;
+  }
+}
+/* When Screen's Atleast Specific Size */
 @media (min-width: 768px) {
-
   .card img {
     height: 11em;
   }
-
 }
 @media (min-width: 1400px) {
   .heart1, .heart2 {
@@ -233,6 +252,3 @@ a:visited {
     margin: 18%;
   }
 }
-
-
-
